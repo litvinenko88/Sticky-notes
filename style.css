@@ -1,0 +1,114 @@
+/* Чтоб не адаптировать страницу я применяю vw */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kalam", cursive;
+  background: linear-gradient(
+    90deg,
+    rgba(173, 173, 20, 1) 37%,
+    rgba(255, 127, 0, 1) 98%
+  );
+}
+.hidden {
+  display: none;
+}
+.wrapper {
+  position: relative;
+  width: 80vw;
+  min-height: 40vw;
+  padding-top: 40px;
+  margin: 0px auto;
+}
+
+.top {
+  margin-bottom: 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+.top-con {
+  display: flex;
+}
+h1 {
+  font-size: 4vw;
+  color: rgb(221, 221, 221);
+}
+.add {
+  padding: 1vw 2vw;
+  font-family: "Kalam", cursive;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.add:hover {
+  background: #d6d6d6;
+}
+.conteiner-textarea {
+  position: relative;
+  top: 300px;
+}
+input {
+  z-index: 100;
+  height: 4vw;
+  padding: 10px;
+  font-family: "Kalam", cursive;
+  font-size: 2vw;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+.close {
+  z-index: 100;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+}
+.send {
+  z-index: 100;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+}
+.card {
+  position: relative;
+  float: left;
+  width: 15vw;
+  height: 15vw;
+  transform: rotate(4deg);
+  background: #03e607;
+  box-shadow: 0 0 15px 0.1px rgba(36, 36, 36, 0.5);
+}
+.card:hover {
+  z-index: 1;
+  transition: transform 0.5s;
+}
+
+.text-p {
+  width: auto;
+  height: auto;
+  line-height: 3vw;
+  word-wrap: break-word;
+  text-align: center;
+  font-size: 2vw;
+  padding: 0px 10px 0 10px;
+}
